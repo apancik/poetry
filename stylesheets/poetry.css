@@ -1,0 +1,1031 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic");
+
+@import url("http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic");
+
+@import url("http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic");
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+
+  vertical-align: baseline;
+  /* 2 */
+
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+
+  font: inherit;
+  /* 2 */
+
+  margin: 0;
+  /* 3 */
+
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+/* GRID
+Useful classes
+ * grid - grid container encapsulating rows or columns
+ * row - optional container used to clear some columns not to overflow, has modifiers such as .slim or .natural-padding to modify spacing
+ * one column ... twelve columns - column classes
+ * pull right ... pull left - modifiers used to change the alignment of columns, useful when you want to avoid empty spacer column to get something to the other side
+*/
+/* VARIABLES
+To tune your rhymes to your liking
+*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  min-width: 960px;
+}
+.grid {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+.grid.visible .column,
+.grid.visible .columns {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.grid .column,
+.grid .columns {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.grid .column.one,
+.grid .columns.one {
+  width: 60px;
+}
+.grid .column.two,
+.grid .columns.two {
+  width: 140px;
+}
+.grid .column.three,
+.grid .columns.three {
+  width: 220px;
+}
+.grid .column.four,
+.grid .columns.four {
+  width: 300px;
+}
+.grid .column.five,
+.grid .columns.five {
+  width: 380px;
+}
+.grid .column.six,
+.grid .columns.six {
+  width: 460px;
+}
+.grid .column.seven,
+.grid .columns.seven {
+  width: 540px;
+}
+.grid .column.eight,
+.grid .columns.eight {
+  width: 620px;
+}
+.grid .column.nine,
+.grid .columns.nine {
+  width: 700px;
+}
+.grid .column.ten,
+.grid .columns.ten {
+  width: 780px;
+}
+.grid .column.eleven,
+.grid .columns.eleven {
+  width: 860px;
+}
+.grid .column.twelve,
+.grid .columns.twelve {
+  width: 940px;
+}
+.grid .offset-by-one {
+  margin-left: 80px;
+}
+.grid .offset-by-two {
+  margin-left: 160px;
+}
+.grid .offset-by-three {
+  margin-left: 240px;
+}
+.grid .offset-by-four {
+  margin-left: 320px;
+}
+.grid .offset-by-five {
+  margin-left: 400px;
+}
+.grid .offset-by-six {
+  margin-left: 480px;
+}
+.grid .offset-by-seven {
+  margin-left: 560px;
+}
+.grid .offset-by-eight {
+  margin-left: 640px;
+}
+.grid .offset-by-nine {
+  margin-left: 720px;
+}
+.grid .offset-by-ten {
+  margin-left: 800px;
+}
+.grid .offset-by-eleven {
+  margin-left: 880px;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 90%;
+    min-width: 100%;
+  }
+  .grid {
+    width: 100%;
+  }
+  .grid .columns,
+  .grid .column {
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .grid .column.one,
+  .grid .columns.one,
+  .grid .column.two,
+  .grid .columns.two,
+  .grid .column.three,
+  .grid .columns.three,
+  .grid .column.four,
+  .grid .columns.four,
+  .grid .column.five,
+  .grid .columns.five,
+  .grid .column.six,
+  .grid .columns.six,
+  .grid .column.seven,
+  .grid .columns.seven,
+  .grid .column.eight,
+  .grid .columns.eight,
+  .grid .column.nine,
+  .grid .columns.nine,
+  .grid .column.ten,
+  .grid .columns.ten,
+  .grid .column.eleven,
+  .grid .columns.eleven,
+  .grid .column.twelve,
+  .grid .columns.twelve {
+    width: 100%;
+  }
+  .grid .offset-by-one,
+  .grid .offset-by-two,
+  .grid .offset-by-three,
+  .grid .offset-by-four,
+  .grid .offset-by-five,
+  .grid .offset-by-six,
+  .grid .offset-by-seven,
+  .grid .offset-by-eight,
+  .grid .offset-by-nine,
+  .grid .offset-by-ten,
+  .grid .offset-by-eleven {
+    margin: 0;
+  }
+}
+.grid:after,
+.row:before,
+.row:after {
+  clear: both;
+  display: table;
+  content: " ";
+  *zoom: 1;
+}
+.row {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.row.slim {
+  padding: 0;
+}
+.row.natural-padding {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.pull.left {
+  float: left !important;
+}
+.pull.right {
+  float: right !important;
+}
+/* ELEMENTS
+Individual element styles and utility classes.
+*/
+/* VARIABLES
+To tune your rhymes to your liking
+*/
+::selection {
+  background: #4ea3cc;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #4ea3cc;
+  text-shadow: none;
+}
+html {
+  font-size: 1em;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.45;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+p {
+  margin-bottom: 1.3em;
+}
+a,
+a:visited {
+  color: #4ea3cc;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: rgba(128, 128, 128, 0.5);
+}
+small,
+.small.font {
+  font-size: 0.707em;
+  letter-spacing: 0;
+}
+.large.font {
+  font-size: 1.999em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #193441;
+  font-weight: 700;
+  line-height: 1.1;
+  text-rendering: optimizeLegibility;
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 3.998em;
+}
+h2 {
+  font-size: 2.827em;
+}
+h3 {
+  font-size: 1.999em;
+}
+h4 {
+  font-size: 1.414em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.707em;
+}
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  hyphens: none;
+  /* W3C standard */
+
+}
+.breakword {
+  word-wrap: break-word;
+}
+.normal-wrap {
+  word-wrap: normal;
+}
+.inherit-wrap {
+  word-wrap: auto;
+}
+img,
+canvas,
+iframe,
+video,
+svg {
+  max-width: 100%;
+}
+code {
+  white-space: pre;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  margin-bottom: 1em;
+  padding: 0.7em 1em;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #193441;
+  color: #193441;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+button:active,
+.button:active {
+  position: relative;
+  top: 1px;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button,
+input[type="submit"]:visited,
+input[type="reset"]:visited,
+input[type="button"]:visited,
+button:visited,
+.button:visited {
+  color: #193441;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover,
+input[type="submit"] active,
+input[type="reset"] active,
+input[type="button"] active,
+button active,
+.button active {
+  text-decoration: none;
+  color: rgba(78, 163, 204, 0.9);
+  border-color: rgba(78, 163, 204, 0.9);
+}
+input[type="submit"].stretched,
+input[type="reset"].stretched,
+input[type="button"].stretched,
+button.stretched,
+.button.stretched {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+button.primary,
+.button.primary {
+  border: none;
+  color: #ffffff;
+  background: #4ea3cc;
+}
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+button.primary:hover,
+.button.primary:hover {
+  background: rgba(78, 163, 204, 0.5);
+}
+input[type="submit"].white,
+input[type="reset"].white,
+input[type="button"].white,
+button.white,
+.button.white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+input[type="submit"].white:hover,
+input[type="reset"].white:hover,
+input[type="button"].white:hover,
+button.white:hover,
+.button.white:hover {
+  background: rgba(242, 246, 247, 0.5);
+}
+input[type="submit"].disabled,
+input[type="reset"].disabled,
+input[type="button"].disabled,
+button.disabled,
+.button.disabled {
+  border: none;
+  color: rgba(25, 52, 65, 0.5);
+  background: rgba(25, 52, 65, 0.2);
+}
+input[type="submit"].disabled:active,
+input[type="reset"].disabled:active,
+input[type="button"].disabled:active,
+button.disabled:active,
+.button.disabled:active {
+  top: 0px;
+}
+form,
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2em;
+  width: 100%;
+}
+textarea {
+  resize: vertical;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+textarea,
+select {
+  display: block;
+  padding: 0.7em 1em 0.7em 1em;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+input[type="text"].stretched,
+input[type="password"].stretched,
+input[type="email"].stretched,
+input[type="search"].stretched,
+input[type="url"].stretched,
+textarea.stretched,
+select.stretched {
+  width: 100%;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #4ea3cc;
+  color: #444;
+}
+input[type="checkbox"] {
+  display: inline;
+}
+.table th,
+.table td {
+  border-left: 1px solid #cbcbcb;
+  border-width: 0 0 0 1px;
+  padding: 0.5em 1em;
+  /* cell padding */
+
+}
+.table th:first-child,
+.table td:first-child {
+  border-left: none;
+}
+.table.striped tr:nth-child(2n-1) td {
+  background-color: #f2f2f2;
+}
+ul.unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.inlined > li {
+  display: inline-block;
+}
+ul.spaced > li {
+  margin-left: 2em;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.invisible {
+  visibility: hidden;
+}
+.overflow-container {
+  overflow-y: scroll;
+}
+.clip {
+  overflow: hidden;
+}
+.dot {
+  border-radius: 50%;
+}
+.inlined {
+  display: inline-block;
+}
+.centered {
+  text-align: center;
+}
+.right-aligned {
+  text-align: right;
+}
+/* SECTIONS
+Classes used to style sections to bootstrap your design.
+
+ * Header - with menu and Logo
+ * Hero - with clear message and CTA
+ * Featurette - with clear message
+ * Footer - for top level navigation and social media
+
+Each section can use different color for background when modified with
+.light.background - light colour
+.dark.background - dark colour
+.primary.background - primary colour
+.image.background - image background
+
+*/
+/* VARIABLES
+To tune your rhymes to your liking
+*/
+header {
+  padding-top: 2em;
+}
+header a,
+header a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+header a:hover,
+header a:focus {
+  text-decoration: underline;
+  color: #ffffff;
+}
+header nav {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+section.hero {
+  background-color: transparent;
+  color: #ffffff;
+}
+section.hero h1 {
+  font-size: 6em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+section.hero button,
+section.hero .button {
+  padding: 1em 2em;
+  font-size: 18px;
+  border-width: 2px;
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+section.featurette {
+  text-align: center;
+}
+section.featurette h2 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+section.featurette p {
+  font-size: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+footer a,
+footer a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.background.image {
+  background-repeat: no-repeat;
+  background-image: url(../images/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 900px;
+}
+.background.light {
+  background-color: #f2f6f7;
+  color: #0e1d24;
+}
+.background.light h1 {
+  color: #0e1d24;
+}
+.background.no {
+  background-color: transparent;
+}
+.background.primary {
+  background-color: #4ea3cc;
+}
+.background.dark {
+  background-color: #193441;
+}
+.background.black {
+  background-color: #0e1d24;
+}
+.background.dark,
+.background.black,
+.background.primary {
+  color: #ffffff;
+}
+.background.dark h1,
+.background.black h1,
+.background.primary h1,
+.background.dark h2,
+.background.black h2,
+.background.primary h2,
+.background.dark h3,
+.background.black h3,
+.background.primary h3,
+.background.dark h4,
+.background.black h4,
+.background.primary h4,
+.background.dark h5,
+.background.black h5,
+.background.primary h5,
+.background.dark h6,
+.background.black h6,
+.background.primary h6 {
+  color: #ffffff;
+}
+.background.dark button,
+.background.black button,
+.background.primary button,
+.background.dark .button,
+.background.black .button,
+.background.primary .button {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.background.dark button.primary,
+.background.black button.primary,
+.background.primary button.primary,
+.background.dark .button.primary,
+.background.black .button.primary,
+.background.primary .button.primary {
+  color: inherit;
+  border-color: inherit;
+}
