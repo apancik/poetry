@@ -1,0 +1,149 @@
+/* SECTIONS
+Classes used to style sections to bootstrap your design.
+
+ * Header - with menu and Logo
+ * Hero - with clear message and CTA
+ * Featurette - with clear message
+ * Footer - for top level navigation and social media
+
+Each section can use different color for background when modified with
+.light.background - light colour
+.dark.background - dark colour
+.primary.background - primary colour
+.image.background - image background
+
+*/
+
+@import "variables";
+
+header {
+    padding-top: 2em;
+
+    a {
+        &, &:visited {
+            text-decoration: none;
+            color: @color-hero-text;
+            font-weight: 500;
+        }
+
+        &:hover, &:focus {
+            text-decoration: underline;
+            color: @color-hero-text;
+        }
+    }
+
+    nav {
+        font-size: 14px;
+        text-transform:uppercase;
+    }
+}
+
+section.hero {
+    background-color: transparent;
+    color: @color-hero-text;
+    h1 {
+        font-size: 6em;
+        color: @color-hero-text;
+        text-transform:uppercase;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        color: @color-hero-text;
+        font-weight: 100;
+        text-transform: none;
+        margin: 1em;
+    }
+
+    button, .button {
+        padding: 1em 2em;
+        font-size: 18px;
+        border-width: 2px;
+        border-radius: 8px;
+        margin-bottom: 2em;
+    }
+}
+
+section.featurette {
+    text-align: center;
+
+    h2 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+    }
+}
+
+footer {
+    a, a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.background {
+    &.image {
+            background-repeat: no-repeat;
+            background-image: @background-image;
+            background-position: center center;
+            background-size: cover;
+            min-height: 900px;
+    }
+
+    &.light {
+        background-color: @color-light;
+        color: @color-black;
+
+        h1 {
+            color: @color-black;
+        }
+    }
+
+    &.no {
+        background-color: transparent;
+    }
+
+    &.primary {
+        background-color: @color-primary;
+    }
+
+    &.dark {
+        background-color: @color-dark;
+    }
+
+    &.black {
+        background-color: @color-black;
+    }
+
+    &.dark, &.black, &.primary {
+        color: @color-white;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: @color-white;
+        }
+
+        button, .button {
+            color: @color-white;
+            border-color: @color-white;
+
+            &.primary {
+                color: inherit;
+                border-color: inherit;
+            }
+        }
+    }
+}

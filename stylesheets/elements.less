@@ -1,0 +1,345 @@
+/* ELEMENTS
+Individual element styles and utility classes.
+*/
+
+@import "variables";
+
+// Use primary color as selection color
+::selection {
+    background: @color-primary;
+    text-shadow: none;
+}
+
+// Fix Firefox shadow bug - has to be separate from previous
+::-moz-selection {
+    background: @color-primary;
+    text-shadow: none;
+}
+
+// ==========
+// Typography
+// ==========
+
+html {
+    font-size: @font-size-base;
+}
+
+body {
+    font-family: @font-family;
+    font-weight: @font-weight-base;
+    line-height: 1.45;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+a {
+    &, &:visited {
+        color: @color-primary;
+        text-decoration: none;
+    }
+
+    &:hover, &:focus {
+        color: rgba(128, 128, 128, 50%);
+    }
+}
+
+small,
+.small.font {
+    font-size: @font-size-small;
+    letter-spacing: 0;
+}
+
+// =========
+// Headlines
+// =========
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @color-dark;
+    font-weight: @font-weight-headings;
+    line-height: 1.1;
+    text-rendering: optimizeLegibility;
+    margin: 0 0 0.5em;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: @font-size-h1;
+}
+
+h2 {
+    font-size: @font-size-h2;
+}
+
+h3 {
+    font-size: @font-size-h3;
+}
+
+h4 {
+    font-size: @font-size-h4;
+}
+
+h5 {
+    font-size: @font-size-base;
+}
+
+h6 {
+    font-size: @font-size-small;
+}
+
+// ============================
+// Hyphenation and wordwrapping
+// ============================
+
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+    hyphens: none;	 /* W3C standard */
+}
+
+.breakword {
+    word-wrap: break-word;
+}
+
+.normal-wrap {
+    word-wrap: normal;
+}
+
+.inherit-wrap {
+    word-wrap: auto;
+}
+
+// ================
+// Reponsive images
+// ================
+
+img, canvas, iframe, video, svg {
+    max-width: 100%;
+}
+
+// ====
+// Code
+// ====
+
+code {
+    white-space: pre;
+    font-family: @font-family-monospace;
+}
+
+// =======
+// Buttons
+// =======
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    margin-bottom: 1em;
+
+    display: inline-block;
+    border-radius: @element-roundness;
+
+    border: 1px solid @color-dark;
+
+    color: @color-dark;
+    background-color: transparent;
+
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+
+    padding: 0.7em 1.5em;
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+
+    &, &:visited {
+        color: @color-dark;
+    }
+
+    &:hover, active {
+        text-decoration: none;
+        color: fade(@color-primary, 90%);
+        border-color: fade(@color-primary, 90%);
+    }
+
+    &.stretched {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    &.primary {
+        border: none;
+        color: @color-white;
+        background: @color-primary;
+
+        &:hover {
+            background: fade(@color-primary, 50%);
+        }
+    }
+
+    &.white {
+        border-color: @color-white;
+        color: @color-white;
+
+        &:hover {
+            background: fade(@color-light, 50%);
+        }
+    }
+
+    &.disabled {
+        border: none;
+        color: fade(@color-dark, 50%);
+        background: fade(@color-dark, 20%);
+
+        &:active {
+            top: 0px;
+        }
+    }
+}
+
+// =====
+// Forms
+// =====
+
+form,
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+textarea,
+select {
+    display: block;
+
+    &.stretched {
+        width: 100%;
+    }
+
+    padding: 0.7em 1em;
+    background-color: @color-white;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: @element-roundness;
+
+    &:focus {
+        border: 1px solid @color-primary;
+        color: #444;
+    }
+}
+
+input[type="checkbox"] {
+    display: inline;
+}
+
+// ======
+// Tables
+// ======
+
+.table {
+    th, td {
+        border-left: 1px solid #cbcbcb;
+        border-width: 0 0 0 1px;
+        padding: 0.5em 1em; /* cell padding */
+
+        &:first-child {
+            border-left: none;
+        }
+    }
+
+    &.striped tr:nth-child(2n-1) td {
+        background-color: #f2f2f2;
+    }
+}
+
+// =====
+// Lists
+// =====
+
+ul {
+    &.unstyled {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &.inlined > li {
+        display: inline-block;
+    }
+
+    &.spaced > li {
+        margin-left: 2em;
+    }
+}
+
+// =========
+// Utilities
+// =========
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.overflow-container {
+    overflow-y: scroll;
+}
+
+.clip {
+    overflow: hidden;
+}
+
+.dot{
+    border-radius: 50%;
+}
+
+.inlined {
+    display: inline-block;
+}
+
+.centered {
+    text-align:center
+}
+
+.right-aligned {
+    text-align:right;
+}
