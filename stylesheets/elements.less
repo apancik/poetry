@@ -53,6 +53,10 @@ small,
     letter-spacing: 0;
 }
 
+.large.font {
+    font-size: @font-size-h3;
+}
+
 // =========
 // Headlines
 // =========
@@ -155,6 +159,8 @@ button,
 .button {
     margin-bottom: 1em;
 
+    padding: 0.7em 1em;
+
     display: inline-block;
     border-radius: @element-roundness;
 
@@ -165,10 +171,8 @@ button,
 
     text-transform: uppercase;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
-
-    padding: 0.7em 1.5em;
 
     &:active {
         position: relative;
@@ -252,7 +256,7 @@ select {
         width: 100%;
     }
 
-    padding: 0.7em 1em;
+    padding: 0.7em 1em 0.7em 1em;
     background-color: @color-white;
     border: 1px solid rgba(0,0,0,0.4);
     border-radius: @element-roundness;
