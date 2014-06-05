@@ -23,7 +23,7 @@ header {
         &, &:visited {
             text-decoration: none;
             color: @color-hero-text;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         &:hover, &:focus {
@@ -135,6 +135,19 @@ footer {
             &.primary {
                 color: inherit;
                 border-color: inherit;
+            }
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="search"],
+        input[type="url"],
+        textarea,
+        select {            
+            border-color: @color-white;
+            &:focus {
+                border-color: @color-primary;
             }
         }
     }
