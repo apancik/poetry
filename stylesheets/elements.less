@@ -72,7 +72,7 @@ h6 {
     line-height: 1.1;
     text-rendering: optimizeLegibility;
     margin: 0 0 0.5em;
-    text-transform: uppercase;
+    text-transform: @text-transform-headings;
 }
 
 h1 {
@@ -93,10 +93,14 @@ h4 {
 
 h5 {
     font-size: @font-size-base;
+    color: @color-primary; 
+    text-transform: uppercase;
 }
 
 h6 {
     font-size: @font-size-small;
+    color: @color-primary;
+    text-transform: uppercase;
 }
 
 // ============================
@@ -137,15 +141,6 @@ xmp {
 
 img, canvas, iframe, video, svg {
     max-width: 100%;
-}
-
-// ====
-// Code
-// ====
-
-code {
-    white-space: pre;
-    font-family: @font-family-monospace;
 }
 
 // =======
@@ -251,19 +246,20 @@ input[type="url"],
 textarea,
 select {
     display: block;
+    outline: none;
 
     &.stretched {
         width: 100%;
     }
 
     padding: 0.7em 1em 0.7em 1em;
-    background-color: @color-white;
-    border: 1px solid rgba(0,0,0,0.4);
+    background-color: transparent;
+    border: 1px solid @color-dark;
     border-radius: @element-roundness;
 
     &:focus {
         border: 1px solid @color-primary;
-        color: #444;
+        color: inherit;        
     }
 }
 

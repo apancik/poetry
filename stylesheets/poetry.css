@@ -624,7 +624,7 @@ h6 {
   line-height: 1.1;
   text-rendering: optimizeLegibility;
   margin: 0 0 0.5em;
-  text-transform: uppercase;
+  text-transform: inherit;
 }
 h1 {
   font-size: 3.998em;
@@ -640,9 +640,13 @@ h4 {
 }
 h5 {
   font-size: 1em;
+  color: #4ea3cc;
+  text-transform: uppercase;
 }
 h6 {
   font-size: 0.707em;
+  color: #4ea3cc;
+  text-transform: uppercase;
 }
 abbr,
 acronym,
@@ -676,10 +680,6 @@ iframe,
 video,
 svg {
   max-width: 100%;
-}
-code {
-  white-space: pre;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 input[type="submit"],
 input[type="reset"],
@@ -808,9 +808,10 @@ input[type="url"],
 textarea,
 select {
   display: block;
+  outline: none;
   padding: 0.7em 1em 0.7em 1em;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  border: 1px solid #193441;
   border-radius: 4px;
 }
 input[type="text"].stretched,
@@ -830,7 +831,7 @@ input[type="url"]:focus,
 textarea:focus,
 select:focus {
   border: 1px solid #4ea3cc;
-  color: #444;
+  color: inherit;
 }
 input[type="checkbox"] {
   display: inline;
@@ -911,7 +912,7 @@ header a,
 header a:visited {
   text-decoration: none;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 700;
 }
 header a:hover,
 header a:focus {
@@ -1028,4 +1029,50 @@ footer a:visited {
 .background.primary .button.primary {
   color: inherit;
   border-color: inherit;
+}
+.background.dark input[type="text"],
+.background.black input[type="text"],
+.background.primary input[type="text"],
+.background.dark input[type="password"],
+.background.black input[type="password"],
+.background.primary input[type="password"],
+.background.dark input[type="email"],
+.background.black input[type="email"],
+.background.primary input[type="email"],
+.background.dark input[type="search"],
+.background.black input[type="search"],
+.background.primary input[type="search"],
+.background.dark input[type="url"],
+.background.black input[type="url"],
+.background.primary input[type="url"],
+.background.dark textarea,
+.background.black textarea,
+.background.primary textarea,
+.background.dark select,
+.background.black select,
+.background.primary select {
+  border-color: #ffffff;
+}
+.background.dark input[type="text"]:focus,
+.background.black input[type="text"]:focus,
+.background.primary input[type="text"]:focus,
+.background.dark input[type="password"]:focus,
+.background.black input[type="password"]:focus,
+.background.primary input[type="password"]:focus,
+.background.dark input[type="email"]:focus,
+.background.black input[type="email"]:focus,
+.background.primary input[type="email"]:focus,
+.background.dark input[type="search"]:focus,
+.background.black input[type="search"]:focus,
+.background.primary input[type="search"]:focus,
+.background.dark input[type="url"]:focus,
+.background.black input[type="url"]:focus,
+.background.primary input[type="url"]:focus,
+.background.dark textarea:focus,
+.background.black textarea:focus,
+.background.primary textarea:focus,
+.background.dark select:focus,
+.background.black select:focus,
+.background.primary select:focus {
+  border-color: #4ea3cc;
 }
