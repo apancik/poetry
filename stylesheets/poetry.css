@@ -603,7 +603,7 @@ a:visited {
 }
 a:hover,
 a:focus {
-  color: rgba(128, 128, 128, 0.5);
+  color: rgba(78, 163, 204, 0.8);
 }
 small,
 .small.font {
@@ -619,11 +619,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: #193441;
   font-weight: 700;
   line-height: 1.1;
   text-rendering: optimizeLegibility;
   margin: 0 0 0.5em;
+  color: #193441;
   text-transform: uppercase;
 }
 h1 {
@@ -665,10 +665,7 @@ xmp {
   /* W3C standard */
 
 }
-.breakword {
-  word-wrap: break-word;
-}
-.normal-wrap {
+.wrap {
   word-wrap: normal;
 }
 .inherit-wrap {
@@ -681,6 +678,106 @@ video,
 svg {
   max-width: 100%;
 }
+.background.image {
+  background-repeat: no-repeat;
+  background-image: url(../images/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 900px;
+}
+.background.light {
+  background-color: #f2f6f7;
+  color: #0e1d24;
+}
+.background.light h1,
+.background.light h2,
+.background.light h3,
+.background.light h4 {
+  color: #0e1d24;
+}
+.background.white {
+  background-color: #ffffff;
+}
+.background.primary {
+  background-color: #4ea3cc;
+}
+.background.dark {
+  background-color: #193441;
+}
+.background.black {
+  background-color: #0e1d24;
+}
+.background.dark,
+.background.black,
+.background.primary {
+  color: #ffffff;
+}
+.background.dark h1,
+.background.black h1,
+.background.primary h1,
+.background.dark h2,
+.background.black h2,
+.background.primary h2,
+.background.dark h3,
+.background.black h3,
+.background.primary h3,
+.background.dark h4,
+.background.black h4,
+.background.primary h4,
+.background.dark h5,
+.background.black h5,
+.background.primary h5,
+.background.dark h6,
+.background.black h6,
+.background.primary h6 {
+  color: #ffffff;
+}
+.background.dark input[type="text"],
+.background.black input[type="text"],
+.background.primary input[type="text"],
+.background.dark input[type="password"],
+.background.black input[type="password"],
+.background.primary input[type="password"],
+.background.dark input[type="email"],
+.background.black input[type="email"],
+.background.primary input[type="email"],
+.background.dark input[type="search"],
+.background.black input[type="search"],
+.background.primary input[type="search"],
+.background.dark input[type="url"],
+.background.black input[type="url"],
+.background.primary input[type="url"],
+.background.dark textarea,
+.background.black textarea,
+.background.primary textarea,
+.background.dark select,
+.background.black select,
+.background.primary select {
+  border-color: #ffffff;
+}
+.background.dark input[type="text"]:focus,
+.background.black input[type="text"]:focus,
+.background.primary input[type="text"]:focus,
+.background.dark input[type="password"]:focus,
+.background.black input[type="password"]:focus,
+.background.primary input[type="password"]:focus,
+.background.dark input[type="email"]:focus,
+.background.black input[type="email"]:focus,
+.background.primary input[type="email"]:focus,
+.background.dark input[type="search"]:focus,
+.background.black input[type="search"]:focus,
+.background.primary input[type="search"]:focus,
+.background.dark input[type="url"]:focus,
+.background.black input[type="url"]:focus,
+.background.primary input[type="url"]:focus,
+.background.dark textarea:focus,
+.background.black textarea:focus,
+.background.primary textarea:focus,
+.background.dark select:focus,
+.background.black select:focus,
+.background.primary select:focus {
+  border-color: #4ea3cc;
+}
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -690,21 +787,14 @@ button,
   padding: 0.7em 1em;
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #193441;
-  color: #193441;
-  background-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 700;
   text-decoration: none;
-}
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active,
-button:active,
-.button:active {
-  position: relative;
-  top: 1px;
+  border: 1px solid #193441;
+  color: #193441;
+  background-color: transparent;
+  outline: none;
 }
 input[type="submit"],
 input[type="reset"],
@@ -718,19 +808,87 @@ button:visited,
 .button:visited {
   color: #193441;
 }
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+button.primary,
+.button.primary {
+  border: none;
+  background: #4ea3cc;
+  color: #ffffff;
+}
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+button:active,
+.button:active {
+  position: relative;
+  top: 1px;
+}
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
-.button:hover,
-input[type="submit"] active,
-input[type="reset"] active,
-input[type="button"] active,
-button active,
-.button active {
+.button:hover {
   text-decoration: none;
-  color: rgba(78, 163, 204, 0.9);
-  border-color: rgba(78, 163, 204, 0.9);
+  background-color: #193441;
+  color: #ffffff;
+}
+.primary.background input[type="submit"]:hover,
+.primary.background input[type="reset"]:hover,
+.primary.background input[type="button"]:hover,
+.primary.background button:hover,
+.primary.background .button:hover {
+  color: #4ea3cc;
+}
+.light.background input[type="submit"]:hover,
+.light.background input[type="reset"]:hover,
+.light.background input[type="button"]:hover,
+.light.background button:hover,
+.light.background .button:hover {
+  color: #f2f6f7;
+}
+.dark.background input[type="submit"]:hover,
+.dark.background input[type="reset"]:hover,
+.dark.background input[type="button"]:hover,
+.dark.background button:hover,
+.dark.background .button:hover {
+  color: #193441;
+}
+.dark.background input[type="submit"],
+.dark.background input[type="reset"],
+.dark.background input[type="button"],
+.dark.background button,
+.dark.background .button,
+.primary.background input[type="submit"],
+.primary.background input[type="reset"],
+.primary.background input[type="button"],
+.primary.background button,
+.primary.background .button,
+input[type="submit"].white,
+input[type="reset"].white,
+input[type="button"].white,
+button.white,
+.button.white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.dark.background input[type="submit"]:hover,
+.dark.background input[type="reset"]:hover,
+.dark.background input[type="button"]:hover,
+.dark.background button:hover,
+.dark.background .button:hover,
+.primary.background input[type="submit"]:hover,
+.primary.background input[type="reset"]:hover,
+.primary.background input[type="button"]:hover,
+.primary.background button:hover,
+.primary.background .button:hover,
+input[type="submit"].white:hover,
+input[type="reset"].white:hover,
+input[type="button"].white:hover,
+button.white:hover,
+.button.white:hover {
+  background: #ffffff;
 }
 input[type="submit"].stretched,
 input[type="reset"].stretched,
@@ -742,52 +900,15 @@ button.stretched,
   padding-right: 0;
   text-align: center;
 }
-input[type="submit"].primary,
-input[type="reset"].primary,
-input[type="button"].primary,
-button.primary,
-.button.primary {
-  border: none;
-  color: #ffffff;
-  background: #4ea3cc;
-}
-input[type="submit"].primary:hover,
-input[type="reset"].primary:hover,
-input[type="button"].primary:hover,
-button.primary:hover,
-.button.primary:hover {
-  background: rgba(78, 163, 204, 0.5);
-}
-input[type="submit"].white,
-input[type="reset"].white,
-input[type="button"].white,
-button.white,
-.button.white {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-input[type="submit"].white:hover,
-input[type="reset"].white:hover,
-input[type="button"].white:hover,
-button.white:hover,
-.button.white:hover {
-  background: rgba(242, 246, 247, 0.5);
-}
 input[type="submit"].disabled,
 input[type="reset"].disabled,
 input[type="button"].disabled,
 button.disabled,
 .button.disabled {
-  border: none;
-  color: rgba(25, 52, 65, 0.5);
-  background: rgba(25, 52, 65, 0.2);
-}
-input[type="submit"].disabled:active,
-input[type="reset"].disabled:active,
-input[type="button"].disabled:active,
-button.disabled:active,
-.button.disabled:active {
-  top: 0px;
+  border: none !important;
+  color: #808080 !important;
+  background: #cccccc !important;
+  top: 0px !important;
 }
 form,
 fieldset {
@@ -838,18 +959,16 @@ input[type="checkbox"] {
 }
 table.table th,
 table.table td {
-  border-left: 1px solid #cbcbcb;
+  border-left: 1px solid rgba(125, 125, 125, 0.2);
   border-width: 0 0 0 1px;
   padding: 0.5em 1em;
-  /* cell padding */
-
 }
 table.table th:first-child,
 table.table td:first-child {
   border-left: none;
 }
 table.striped tr:nth-child(2n-1) td {
-  background-color: #f2f2f2;
+  background-color: rgba(125, 125, 125, 0.2);
 }
 ul.unstyled {
   margin: 0;
@@ -960,119 +1079,4 @@ footer a,
 footer a:visited {
   text-decoration: none;
   color: inherit;
-}
-.background.image {
-  background-repeat: no-repeat;
-  background-image: url(../images/background.jpg);
-  background-position: center center;
-  background-size: cover;
-  min-height: 900px;
-}
-.background.light {
-  background-color: #f2f6f7;
-  color: #0e1d24;
-}
-.background.light h1 {
-  color: #0e1d24;
-}
-.background.no {
-  background-color: transparent;
-}
-.background.primary {
-  background-color: #4ea3cc;
-}
-.background.dark {
-  background-color: #193441;
-}
-.background.black {
-  background-color: #0e1d24;
-}
-.background.dark,
-.background.black,
-.background.primary {
-  color: #ffffff;
-}
-.background.dark h1,
-.background.black h1,
-.background.primary h1,
-.background.dark h2,
-.background.black h2,
-.background.primary h2,
-.background.dark h3,
-.background.black h3,
-.background.primary h3,
-.background.dark h4,
-.background.black h4,
-.background.primary h4,
-.background.dark h5,
-.background.black h5,
-.background.primary h5,
-.background.dark h6,
-.background.black h6,
-.background.primary h6 {
-  color: #ffffff;
-}
-.background.dark button,
-.background.black button,
-.background.primary button,
-.background.dark .button,
-.background.black .button,
-.background.primary .button {
-  color: #ffffff;
-  border-color: #ffffff;
-}
-.background.dark button.primary,
-.background.black button.primary,
-.background.primary button.primary,
-.background.dark .button.primary,
-.background.black .button.primary,
-.background.primary .button.primary {
-  color: inherit;
-  border-color: inherit;
-}
-.background.dark input[type="text"],
-.background.black input[type="text"],
-.background.primary input[type="text"],
-.background.dark input[type="password"],
-.background.black input[type="password"],
-.background.primary input[type="password"],
-.background.dark input[type="email"],
-.background.black input[type="email"],
-.background.primary input[type="email"],
-.background.dark input[type="search"],
-.background.black input[type="search"],
-.background.primary input[type="search"],
-.background.dark input[type="url"],
-.background.black input[type="url"],
-.background.primary input[type="url"],
-.background.dark textarea,
-.background.black textarea,
-.background.primary textarea,
-.background.dark select,
-.background.black select,
-.background.primary select {
-  border-color: #ffffff;
-}
-.background.dark input[type="text"]:focus,
-.background.black input[type="text"]:focus,
-.background.primary input[type="text"]:focus,
-.background.dark input[type="password"]:focus,
-.background.black input[type="password"]:focus,
-.background.primary input[type="password"]:focus,
-.background.dark input[type="email"]:focus,
-.background.black input[type="email"]:focus,
-.background.primary input[type="email"]:focus,
-.background.dark input[type="search"]:focus,
-.background.black input[type="search"]:focus,
-.background.primary input[type="search"]:focus,
-.background.dark input[type="url"]:focus,
-.background.black input[type="url"]:focus,
-.background.primary input[type="url"]:focus,
-.background.dark textarea:focus,
-.background.black textarea:focus,
-.background.primary textarea:focus,
-.background.dark select:focus,
-.background.black select:focus,
-.background.primary select:focus {
-  border-color: #4ea3cc;
 }

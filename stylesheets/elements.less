@@ -43,7 +43,7 @@ a {
     }
 
     &:hover, &:focus {
-        color: rgba(128, 128, 128, 50%);
+        color: fade(@color-primary, 80%);
     }
 }
 
@@ -66,12 +66,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    color: @color-dark;
+h6 {    
     font-weight: @font-weight-headings;
     line-height: 1.1;
     text-rendering: optimizeLegibility;
     margin: 0 0 0.5em;
+    color: @color-dark;
     text-transform: @text-transform-headings;
 }
 
@@ -123,11 +123,8 @@ xmp {
     hyphens: none;	 /* W3C standard */
 }
 
-.breakword {
-    word-wrap: break-word;
-}
 
-.normal-wrap {
+.wrap {
     word-wrap: normal;
 }
 
@@ -141,6 +138,71 @@ xmp {
 
 img, canvas, iframe, video, svg {
     max-width: 100%;
+}
+
+// ===========
+// Backgrounds
+// ===========
+
+.background {
+    &.image {
+            background-repeat: no-repeat;
+            background-image: @background-image;
+            background-position: center center;
+            background-size: cover;
+            min-height: 900px;
+    }
+
+    &.light {
+        background-color: @color-light;
+        color: @color-black;
+
+        h1, h2, h3, h4 {
+            color: @color-black;
+        }
+    }
+    
+    &.white {
+        background-color: @color-white;
+    }
+
+    &.primary {
+        background-color: @color-primary;
+    }
+
+    &.dark {
+        background-color: @color-dark;
+    }
+
+    &.black {
+        background-color: @color-black;
+    }
+
+    &.dark, &.black, &.primary {
+        color: @color-white;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: @color-white;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="search"],
+        input[type="url"],
+        textarea,
+        select {            
+            border-color: @color-white;
+            &:focus {
+                border-color: @color-primary;
+            }
+        }
+    }
 }
 
 // =======
@@ -157,32 +219,69 @@ button,
     padding: 0.7em 1em;
 
     display: inline-block;
-    border-radius: @element-roundness;
-
-    border: 1px solid @color-dark;
-
-    color: @color-dark;
-    background-color: transparent;
+    border-radius: @element-roundness;    
 
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 700;
     text-decoration: none;
+    
+    border: 1px solid @color-dark;
 
-    &:active {
-        position: relative;
-        top: 1px;
-    }
-
+    color: @color-dark;
+    background-color: transparent;   
+    
+    outline: none;
+    
     &, &:visited {
         color: @color-dark;
     }
-
-    &:hover, active {
-        text-decoration: none;
-        color: fade(@color-primary, 90%);
-        border-color: fade(@color-primary, 90%);
+    
+    &.primary {
+        border: none;        
+        background: @color-primary;
+        color: @color-white;        
     }
+    
+    &:active {
+        position: relative;
+        top: 1px;
+    }    
+    
+    &:hover {
+        text-decoration: none;        
+        background-color: @color-dark;     
+        color: @color-white;
+    }
+    
+    .primary.background & {
+        &:hover {
+            color: @color-primary;
+        }
+    }
+    
+    .light.background & {
+        &:hover {
+            color: @color-light;
+        }
+    }
+    
+    .dark.background & {
+        &:hover {
+            color: @color-dark;
+        }
+    }     
+    
+    .dark.background &,
+    .primary.background &,
+    &.white {
+        border-color: @color-white;
+        color: @color-white;
+
+        &:hover {
+            background: @color-white;            
+        }
+    }    
 
     &.stretched {
         width: 100%;
@@ -190,35 +289,13 @@ button,
         padding-right: 0;
         text-align: center;
     }
-
-    &.primary {
-        border: none;
-        color: @color-white;
-        background: @color-primary;
-
-        &:hover {
-            background: fade(@color-primary, 50%);
-        }
-    }
-
-    &.white {
-        border-color: @color-white;
-        color: @color-white;
-
-        &:hover {
-            background: fade(@color-light, 50%);
-        }
-    }
-
+    
     &.disabled {
-        border: none;
-        color: fade(@color-dark, 50%);
-        background: fade(@color-dark, 20%);
-
-        &:active {
-            top: 0px;
-        }
-    }
+        border: none !important;
+        color: darken(@color-white, 50%) !important;
+        background: darken(@color-white, 20%) !important;
+        top: 0px !important;
+    }    
 }
 
 // =====
@@ -274,9 +351,9 @@ input[type="checkbox"] {
 table {
     &.table th,
     &.table td {
-        border-left: 1px solid #cbcbcb;
+        border-left: 1px solid rgba(125, 125, 125, 20%);
         border-width: 0 0 0 1px;
-        padding: 0.5em 1em; /* cell padding */
+        padding: 0.5em 1em;
 
         &:first-child {
             border-left: none;
@@ -284,7 +361,7 @@ table {
     }
 
     &.striped tr:nth-child(2n-1) td {
-        background-color: #f2f2f2;
+        background-color: rgba(125, 125, 125, 20%);
     }
 }
 
