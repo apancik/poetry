@@ -605,13 +605,21 @@ a:hover,
 a:focus {
   color: rgba(78, 163, 204, 0.8);
 }
+.large {
+  font-size: 1.414em;
+}
+.largebutton,
+.large.button {
+  border-width: 2px;
+  border-radius: 8px;
+}
+.large.extra {
+  font-size: 1.999em;
+}
 small,
-.small.font {
+.small {
   font-size: 0.707em;
   letter-spacing: 0;
-}
-.large.font {
-  font-size: 1.999em;
 }
 h1,
 h2,
@@ -1052,14 +1060,6 @@ section.hero h1 {
   text-transform: uppercase;
   font-weight: 700;
   margin: 0;
-}
-section.hero button,
-section.hero .button {
-  padding: 1em 2em;
-  font-size: 18px;
-  border-width: 2px;
-  border-radius: 8px;
-  margin-bottom: 2em;
 }
 section.featurette {
   text-align: center;

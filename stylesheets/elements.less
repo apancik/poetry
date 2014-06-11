@@ -47,14 +47,23 @@ a {
     }
 }
 
-small,
-.small.font {
-    font-size: @font-size-small;
-    letter-spacing: 0;
+.large {
+    font-size: @font-size-h4;
+    
+    &button, &.button {        
+        border-width: 2px;
+        border-radius: 8px;
+    }
+    
+    &.extra {
+        font-size: @font-size-h3;
+    }
 }
 
-.large.font {
-    font-size: @font-size-h3;
+small,
+.small {
+    font-size: @font-size-small;
+    letter-spacing: 0;
 }
 
 // =========
