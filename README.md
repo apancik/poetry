@@ -4,7 +4,7 @@ Poetry is a minimalistic HTML5/CSS3 boilerplate with verbose markup written in L
 
 ## Quick start
 
-Download/clone this repo and explore included html templates.
+Download/clone this repo and explore included html templates. You can use Sketch 3 template with symbols and text styles to speed up prototyping.
 
 ## License and disclaimer
 
