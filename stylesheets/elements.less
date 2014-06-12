@@ -52,7 +52,7 @@ a {
     
     &button, &.button {        
         border-width: 2px;
-        border-radius: 8px;
+        border-radius: @element-roundness * 2;
     }
     
     &.extra {
@@ -186,10 +186,9 @@ img, canvas, iframe, video, svg {
     &.black {
         background-color: @color-black;
     }
-
+    
     &.dark, &.black, &.primary {
-        color: @color-white;
-
+        &,
         h1,
         h2,
         h3,

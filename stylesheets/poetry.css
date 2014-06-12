@@ -717,9 +717,7 @@ svg {
 }
 .background.dark,
 .background.black,
-.background.primary {
-  color: #ffffff;
-}
+.background.primary,
 .background.dark h1,
 .background.black h1,
 .background.primary h1,
@@ -1037,9 +1035,8 @@ header {
 }
 header a,
 header a:visited {
-  text-decoration: none;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: bold;
 }
 header a:hover,
 header a:focus {
