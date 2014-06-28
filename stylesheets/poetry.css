@@ -987,6 +987,9 @@ ul.inlined > li {
 ul.spaced > li {
   margin-left: 2em;
 }
+.foreground {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
 .hidden {
   display: none !important;
   visibility: hidden;
