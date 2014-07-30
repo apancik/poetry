@@ -436,15 +436,16 @@ ul {
     display: inline-block;
 }
 
-// horizontally
 .centered {
-    text-align: center
-}
-//vertically
-.vertical-center {
-    position: absolute;
-    width: 100%;
-    top: 45%;
+    &.horizontally {
+        text-align: center
+    }
+    
+    &.vertically {
+        position: absolute;
+        width: 100%;
+        top: 45%;
+    }
 }
 
 .right-aligned {

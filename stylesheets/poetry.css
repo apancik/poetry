@@ -1016,10 +1016,10 @@ ul.spaced > li {
 .inlined {
   display: inline-block;
 }
-.centered {
+.centered.horizontally {
   text-align: center;
 }
-.vertical-center {
+.centered.vertically {
   position: absolute;
   width: 100%;
   top: 45%;
