@@ -154,14 +154,6 @@ img, canvas, iframe, video, svg {
 // ===========
 
 .background {
-    &.image {
-            background-repeat: no-repeat;
-            background-image: @background-image;
-            background-position: center center;
-            background-size: cover;
-            min-height: 900px;
-    }
-
     &.light {
         background-color: @color-light;
         color: @color-black;
@@ -210,6 +202,14 @@ img, canvas, iframe, video, svg {
                 border-color: @color-primary;
             }
         }
+    }
+    
+    &.image {
+        background-repeat: no-repeat;
+        background-image: @background-image;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 }
 
@@ -397,8 +397,18 @@ ul {
 // Utilities
 // =========
 
-.foreground {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.20);
+.hover {
+    &.forward {
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    &.forward-2 {
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &.forward-3 {
+        box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2);
+    }
 }
 
 .hidden {
@@ -426,8 +436,15 @@ ul {
     display: inline-block;
 }
 
+// horizontally
 .centered {
-    text-align:center
+    text-align: center
+}
+//vertically
+.vertical-center {
+    position: absolute;
+    width: 100%;
+    top: 45%;
 }
 
 .right-aligned {
