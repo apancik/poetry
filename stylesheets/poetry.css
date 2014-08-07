@@ -606,6 +606,12 @@ a:hover,
 a:focus {
   color: rgba(78, 163, 204, 0.8);
 }
+hr {
+  border: solid 2px #4ea3cc;
+  display: block;
+  width: 35px;
+  margin: 25px auto;
+}
 .large {
   font-size: 1.414em;
 }
