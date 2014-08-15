@@ -363,11 +363,23 @@ ul {
 // Utilities
 // =========
 
+.panel {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    
+    &.short {
+        height: 110px;
+    }
+    
+    &.medium {
+        height: 250px;
+    }
+}
+
 .progress {
     height: 1.5em;
     margin-bottom: 1em;
     overflow: hidden;
-    background-color: @color-light;
+    background-color: lighten(@color-light, 1%);
     border-radius: @element-roundness;
     
     & > .bar {
@@ -383,20 +395,6 @@ ul {
     font-weight: bold;
     padding: 0 0.5em;
     border-radius: @element-roundness;
-}
-
-.hover {
-    &.forward {
-        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-    }
-
-    &.forward-2 {
-        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    &.forward-3 {
-        box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2);
-    }
 }
 
 .hidden {

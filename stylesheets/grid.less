@@ -8,8 +8,10 @@ Useful classes
 
 @import "variables";
 
+@gutter-percent: 100% * (@gutter-width / @body-width);
 @column-number: 12; // max/recommended 12 - as it is divisible by both 3 and 4
-@column-width: (100% - @column-number * @gutter-width) / @column-number;
+@column-width: (100% - @column-number * @gutter-percent) / @column-number;
+
 
 // Enable natural box model for all elements, you'll thank this later
 *, *:before, *:after {
@@ -49,79 +51,79 @@ body {
     & .columns {
         display: inline;
         float: left;
-        margin-left: @gutter-width / 2;
-        margin-right: @gutter-width / 2;
+        margin-left: @gutter-percent / 2;
+        margin-right: @gutter-percent / 2;
 
         &.one {
-            width: @column-width * 1 + @gutter-width * 0;
+            width: @column-width * 1 + @gutter-percent * 0;
         }
         &.two {
-            width: @column-width * 2 + @gutter-width * 1;
+            width: @column-width * 2 + @gutter-percent * 1;
         }
         &.three {
-            width: @column-width * 3 + @gutter-width * 2;
+            width: @column-width * 3 + @gutter-percent * 2;
         }
         &.four {
-            width: @column-width * 4 + @gutter-width * 3;
+            width: @column-width * 4 + @gutter-percent * 3;
         }
         &.five {
-            width: @column-width * 5 + @gutter-width * 4;
+            width: @column-width * 5 + @gutter-percent * 4;
         }
         &.six {
-            width: @column-width * 6 + @gutter-width * 5;
+            width: @column-width * 6 + @gutter-percent * 5;
         }
         &.seven {
-            width: @column-width * 7 + @gutter-width * 6;
+            width: @column-width * 7 + @gutter-percent * 6;
         }
         &.eight {
-            width: @column-width * 8 + @gutter-width * 7;
+            width: @column-width * 8 + @gutter-percent * 7;
         }
         &.nine {
-            width: @column-width * 9 + @gutter-width * 8;
+            width: @column-width * 9 + @gutter-percent * 8;
         }
         &.ten {
-            width: @column-width * 10 + @gutter-width * 9;
+            width: @column-width * 10 + @gutter-percent * 9;
         }
         &.eleven {
-            width: @column-width * 11 + @gutter-width * 10;
+            width: @column-width * 11 + @gutter-percent * 10;
         }
         &.twelve {
-            width: @column-width * 12 + @gutter-width * 11;
+            width: @column-width * 12 + @gutter-percent * 11;
         }
     }
 
     .offset-by-one {
-        margin-left: @column-width * 1 + @gutter-width * 1;
+        margin-left: @column-width * 1 + @gutter-percent * 1;
     }
     .offset-by-two {
-        margin-left: @column-width * 2 + @gutter-width * 2;
+        margin-left: @column-width * 2 + @gutter-percent * 2;
     }
     .offset-by-three {
-        margin-left: @column-width * 3 + @gutter-width * 3;
+        margin-left: @column-width * 3 + @gutter-percent * 3;
     }
     .offset-by-four {
-        margin-left: @column-width * 4 + @gutter-width * 4;
+        margin-left: @column-width * 4 + @gutter-percent * 4;
     }
     .offset-by-five {
-        margin-left: @column-width * 5 + @gutter-width * 5;
+        margin-left: @column-width * 5 + @gutter-percent * 5;
     }
     .offset-by-six {
-        margin-left: @column-width * 6 + @gutter-width * 6;
+        margin-left: @column-width * 6 + @gutter-percent * 6;
     }
     .offset-by-seven {
-        margin-left: @column-width * 7 + @gutter-width * 7;
+        margin-left: @column-width * 7 + @gutter-percent * 7;
     }
     .offset-by-eight {
-        margin-left: @column-width * 8 + @gutter-width * 8;
+        margin-left: @column-width * 8 + @gutter-percent * 8;
     }
     .offset-by-nine {
-        margin-left: @column-width * 9 + @gutter-width * 9;
+        margin-left: @column-width * 9 + @gutter-percent * 9;
     }
     .offset-by-ten {
-        margin-left: @column-width * 10 + @gutter-width * 10;
+        margin-left: @column-width * 10 + @gutter-percent * 10;
     }
     .offset-by-eleven {
-        margin-left: @column-width * 11 + @gutter-width * 11;
+        margin-left: @column-width * 11 + @gutter-percent * 11;
     }
 }
 
