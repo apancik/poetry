@@ -23,15 +23,21 @@
         <div class="grid">
             <div class="row">
                 <!-- LOGO -->
+                <div class="alert success">
+                    You have been successfully subscribed
+                </div>
             </div>
             <div class="row">
                 <div class="twelve columns">
                     <h2>Company name</h2>
                     <p class="extra large">Stay tuned, we are launching very soon.</p>
                 </div>
-                <form action="">
+                <form action="" method="post" target="_blank" novalidate>
                     <div class="offset-by-three four columns">
-                        <input class="stretched" type="email" id="text-edit" placeholder="Email" />
+                        <input name="EMAIL" class="stretched" type="email" id="text-edit" placeholder="Email" />
+                        <div style="position: absolute; left: -5000px;">
+                            <!-- Place anti-spambot fields -->
+                        </div>
                     </div>
                     <div class="two columns">
                         <button class="primary stretched" type="submit">Subscribe</button>
