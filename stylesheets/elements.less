@@ -156,70 +156,6 @@ img, canvas, iframe, video, svg {
     max-width: 100%;
 }
 
-// ===========
-// Backgrounds
-// ===========
-
-.background {
-    &.light {
-        background-color: @color-light;
-        color: @color-black;
-
-        h1, h2, h3, h4 {
-            color: @color-black;
-        }
-    }
-    
-    &.white {
-        background-color: @color-white;
-    }
-
-    &.primary {
-        background-color: @color-primary;
-    }
-
-    &.dark {
-        background-color: @color-dark;
-    }
-
-    &.black {
-        background-color: @color-black;
-    }
-    
-    &.dark, &.black, &.primary {
-        &,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: @color-white;
-        }
-        
-        input[type="text"],
-        input[type="password"],
-        input[type="email"],
-        input[type="search"],
-        input[type="url"],
-        textarea,
-        select {            
-            border-color: @color-white;
-            &:focus {
-                border-color: @color-primary;
-            }
-        }
-    }
-    
-    &.image {
-        background-repeat: no-repeat;
-        background-image: @background-image;
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-}
-
 // =======
 // Buttons
 // =======
@@ -427,6 +363,28 @@ ul {
 // Utilities
 // =========
 
+.progress {
+    height: 1.5em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    background-color: @color-light;
+    border-radius: @element-roundness;
+    
+    & > .bar {
+        height: 100%;
+        transition: width .6s ease;
+        background-color: @color-primary;
+    }
+}
+
+.badge {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 0.5em;
+    border-radius: @element-roundness;
+}
+
 .hover {
     &.forward {
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
@@ -480,4 +438,68 @@ ul {
 
 .right-aligned {
     text-align:right;
+}
+
+// ===========
+// Backgrounds
+// ===========
+
+.background {
+    &.light {
+        background-color: @color-light;
+        color: @color-black;
+
+        h1, h2, h3, h4 {
+            color: @color-black;
+        }
+    }
+    
+    &.white {
+        background-color: @color-white;
+    }
+
+    &.primary {
+        background-color: @color-primary;
+    }
+
+    &.dark {
+        background-color: @color-dark;
+    }
+
+    &.black {
+        background-color: @color-black;
+    }
+    
+    &.dark, &.black, &.primary {
+        &,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: @color-white;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="search"],
+        input[type="url"],
+        textarea,
+        select {            
+            border-color: @color-white;
+            &:focus {
+                border-color: @color-primary;
+            }
+        }
+    }
+    
+    &.image {
+        background-repeat: no-repeat;
+        background-image: @background-image;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }

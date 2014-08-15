@@ -693,104 +693,6 @@ video,
 svg {
   max-width: 100%;
 }
-.background.light {
-  background-color: #f2f6f7;
-  color: #0e1d24;
-}
-.background.light h1,
-.background.light h2,
-.background.light h3,
-.background.light h4 {
-  color: #0e1d24;
-}
-.background.white {
-  background-color: #ffffff;
-}
-.background.primary {
-  background-color: #4ea3cc;
-}
-.background.dark {
-  background-color: #193441;
-}
-.background.black {
-  background-color: #0e1d24;
-}
-.background.dark,
-.background.black,
-.background.primary,
-.background.dark h1,
-.background.black h1,
-.background.primary h1,
-.background.dark h2,
-.background.black h2,
-.background.primary h2,
-.background.dark h3,
-.background.black h3,
-.background.primary h3,
-.background.dark h4,
-.background.black h4,
-.background.primary h4,
-.background.dark h5,
-.background.black h5,
-.background.primary h5,
-.background.dark h6,
-.background.black h6,
-.background.primary h6 {
-  color: #ffffff;
-}
-.background.dark input[type="text"],
-.background.black input[type="text"],
-.background.primary input[type="text"],
-.background.dark input[type="password"],
-.background.black input[type="password"],
-.background.primary input[type="password"],
-.background.dark input[type="email"],
-.background.black input[type="email"],
-.background.primary input[type="email"],
-.background.dark input[type="search"],
-.background.black input[type="search"],
-.background.primary input[type="search"],
-.background.dark input[type="url"],
-.background.black input[type="url"],
-.background.primary input[type="url"],
-.background.dark textarea,
-.background.black textarea,
-.background.primary textarea,
-.background.dark select,
-.background.black select,
-.background.primary select {
-  border-color: #ffffff;
-}
-.background.dark input[type="text"]:focus,
-.background.black input[type="text"]:focus,
-.background.primary input[type="text"]:focus,
-.background.dark input[type="password"]:focus,
-.background.black input[type="password"]:focus,
-.background.primary input[type="password"]:focus,
-.background.dark input[type="email"]:focus,
-.background.black input[type="email"]:focus,
-.background.primary input[type="email"]:focus,
-.background.dark input[type="search"]:focus,
-.background.black input[type="search"]:focus,
-.background.primary input[type="search"]:focus,
-.background.dark input[type="url"]:focus,
-.background.black input[type="url"]:focus,
-.background.primary input[type="url"]:focus,
-.background.dark textarea:focus,
-.background.black textarea:focus,
-.background.primary textarea:focus,
-.background.dark select:focus,
-.background.black select:focus,
-.background.primary select:focus {
-  border-color: #4ea3cc;
-}
-.background.image {
-  background-repeat: no-repeat;
-  background-image: url(../images/background-photo.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -1010,6 +912,25 @@ ul.spaced > li {
   border-color: #ebccd1;
   color: #a94442;
 }
+.progress {
+  height: 1.5em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  background-color: #f2f6f7;
+  border-radius: 4px;
+}
+.progress > .bar {
+  height: 100%;
+  transition: width .6s ease;
+  background-color: #4ea3cc;
+}
+.badge {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 0.5em;
+  border-radius: 4px;
+}
 .hover.forward {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
 }
@@ -1048,6 +969,104 @@ ul.spaced > li {
 }
 .right-aligned {
   text-align: right;
+}
+.background.light {
+  background-color: #f2f6f7;
+  color: #0e1d24;
+}
+.background.light h1,
+.background.light h2,
+.background.light h3,
+.background.light h4 {
+  color: #0e1d24;
+}
+.background.white {
+  background-color: #ffffff;
+}
+.background.primary {
+  background-color: #4ea3cc;
+}
+.background.dark {
+  background-color: #193441;
+}
+.background.black {
+  background-color: #0e1d24;
+}
+.background.dark,
+.background.black,
+.background.primary,
+.background.dark h1,
+.background.black h1,
+.background.primary h1,
+.background.dark h2,
+.background.black h2,
+.background.primary h2,
+.background.dark h3,
+.background.black h3,
+.background.primary h3,
+.background.dark h4,
+.background.black h4,
+.background.primary h4,
+.background.dark h5,
+.background.black h5,
+.background.primary h5,
+.background.dark h6,
+.background.black h6,
+.background.primary h6 {
+  color: #ffffff;
+}
+.background.dark input[type="text"],
+.background.black input[type="text"],
+.background.primary input[type="text"],
+.background.dark input[type="password"],
+.background.black input[type="password"],
+.background.primary input[type="password"],
+.background.dark input[type="email"],
+.background.black input[type="email"],
+.background.primary input[type="email"],
+.background.dark input[type="search"],
+.background.black input[type="search"],
+.background.primary input[type="search"],
+.background.dark input[type="url"],
+.background.black input[type="url"],
+.background.primary input[type="url"],
+.background.dark textarea,
+.background.black textarea,
+.background.primary textarea,
+.background.dark select,
+.background.black select,
+.background.primary select {
+  border-color: #ffffff;
+}
+.background.dark input[type="text"]:focus,
+.background.black input[type="text"]:focus,
+.background.primary input[type="text"]:focus,
+.background.dark input[type="password"]:focus,
+.background.black input[type="password"]:focus,
+.background.primary input[type="password"]:focus,
+.background.dark input[type="email"]:focus,
+.background.black input[type="email"]:focus,
+.background.primary input[type="email"]:focus,
+.background.dark input[type="search"]:focus,
+.background.black input[type="search"]:focus,
+.background.primary input[type="search"]:focus,
+.background.dark input[type="url"]:focus,
+.background.black input[type="url"]:focus,
+.background.primary input[type="url"]:focus,
+.background.dark textarea:focus,
+.background.black textarea:focus,
+.background.primary textarea:focus,
+.background.dark select:focus,
+.background.black select:focus,
+.background.primary select:focus {
+  border-color: #4ea3cc;
+}
+.background.image {
+  background-repeat: no-repeat;
+  background-image: url(../images/background-photo.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 /* SECTIONS
 Classes used to style sections to bootstrap your design.
