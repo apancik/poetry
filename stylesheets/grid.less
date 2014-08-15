@@ -9,7 +9,7 @@ Useful classes
 @import "variables";
 
 @column-number: 12; // max/recommended 12 - as it is divisible by both 3 and 4
-@column-width: (@grid-width - @column-number * @gutter-width) / @column-number;
+@column-width: (100% - @column-number * @gutter-width) / @column-number;
 
 // Enable natural box model for all elements, you'll thank this later
 *, *:before, *:after {
@@ -18,9 +18,10 @@ Useful classes
     box-sizing: border-box;
  }
 
-// Making sure "width: 100%" is never less than the actual @grid-width
+// Making sure "width: 100%" is never less than the actual @body-width
 body {
-    min-width:  @grid-width;
+    min-width:  @body-width;
+    margin: 0 auto;
 }
 
 // ===============
@@ -29,19 +30,23 @@ body {
 
 .grid {
     // Fixed width & centered
-    width: @grid-width;
+    width: @body-width;
     margin: 0 auto;
     padding: 0;
     position: relative;
-
+    
+    &.nested {
+        width: 100%
+    }
+    
     &.visible {
         .column, .columns {
             background-color: rgba(255, 0, 0, 0.3);
         }
     }
 
-    .column,
-    .columns {
+    & .column,
+    & .columns {
         display: inline;
         float: left;
         margin-left: @gutter-width / 2;

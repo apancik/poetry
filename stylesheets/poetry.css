@@ -392,12 +392,16 @@ To tune your rhymes to your liking
 }
 body {
   min-width: 960px;
+  margin: 0 auto;
 }
 .grid {
   width: 960px;
   margin: 0 auto;
   padding: 0;
   position: relative;
+}
+.grid.nested {
+  width: 100%;
 }
 .grid.visible .column,
 .grid.visible .columns {
@@ -407,89 +411,89 @@ body {
 .grid .columns {
   display: inline;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1.0416666666666665%;
+  margin-right: 1.0416666666666665%;
 }
 .grid .column.one,
 .grid .columns.one {
-  width: 60px;
+  width: 6.25%;
 }
 .grid .column.two,
 .grid .columns.two {
-  width: 140px;
+  width: 14.583333333333332%;
 }
 .grid .column.three,
 .grid .columns.three {
-  width: 220px;
+  width: 22.916666666666664%;
 }
 .grid .column.four,
 .grid .columns.four {
-  width: 300px;
+  width: 31.25%;
 }
 .grid .column.five,
 .grid .columns.five {
-  width: 380px;
+  width: 39.58333333333333%;
 }
 .grid .column.six,
 .grid .columns.six {
-  width: 460px;
+  width: 47.916666666666664%;
 }
 .grid .column.seven,
 .grid .columns.seven {
-  width: 540px;
+  width: 56.25%;
 }
 .grid .column.eight,
 .grid .columns.eight {
-  width: 620px;
+  width: 64.58333333333333%;
 }
 .grid .column.nine,
 .grid .columns.nine {
-  width: 700px;
+  width: 72.91666666666666%;
 }
 .grid .column.ten,
 .grid .columns.ten {
-  width: 780px;
+  width: 81.25%;
 }
 .grid .column.eleven,
 .grid .columns.eleven {
-  width: 860px;
+  width: 89.58333333333333%;
 }
 .grid .column.twelve,
 .grid .columns.twelve {
-  width: 940px;
+  width: 97.91666666666666%;
 }
 .grid .offset-by-one {
-  margin-left: 80px;
+  margin-left: 8.333333333333332%;
 }
 .grid .offset-by-two {
-  margin-left: 160px;
+  margin-left: 16.666666666666664%;
 }
 .grid .offset-by-three {
-  margin-left: 240px;
+  margin-left: 25%;
 }
 .grid .offset-by-four {
-  margin-left: 320px;
+  margin-left: 33.33333333333333%;
 }
 .grid .offset-by-five {
-  margin-left: 400px;
+  margin-left: 41.666666666666664%;
 }
 .grid .offset-by-six {
-  margin-left: 480px;
+  margin-left: 50%;
 }
 .grid .offset-by-seven {
-  margin-left: 560px;
+  margin-left: 58.33333333333333%;
 }
 .grid .offset-by-eight {
-  margin-left: 640px;
+  margin-left: 66.66666666666666%;
 }
 .grid .offset-by-nine {
-  margin-left: 720px;
+  margin-left: 75%;
 }
 .grid .offset-by-ten {
-  margin-left: 800px;
+  margin-left: 83.33333333333333%;
 }
 .grid .offset-by-eleven {
-  margin-left: 880px;
+  margin-left: 91.66666666666666%;
 }
 @media only screen and (max-width: 767px) {
   body {
